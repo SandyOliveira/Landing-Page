@@ -45,7 +45,7 @@ body {
 
 .wheel-btn {
     position: absolute;
-    left: 22%;
+    left: 12%;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 70px;
@@ -160,15 +160,17 @@ body {
     }
 
     .wheel-wrap {
-        flex: 0 0 280px;
-        max-width: 220px;
+        left: -40px;
+        width: 280px;
     }
-
+    
     .card {
-        flex: 1 1 auto;
-        min-width: 200px;
+        flex: content;
+        left: -20px;
+        min-width: 255px;
         max-width: 520px;
     }
+   
 
 }
 

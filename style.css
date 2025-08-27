@@ -9,8 +9,8 @@
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    background-color: #F9F6F2;
-    color: #7B877E;
+    background-color: var(--bg);
+    color: var(--pri);
 }
 
 
@@ -52,7 +52,7 @@ body {
     height: 70px;
     border-radius: 50%;
     background: var(--pri);
-    color: #fff;
+    color: var(--white);
     display: grid;
     place-items: center;
     font-weight: 700;
@@ -69,7 +69,7 @@ body {
     transform-origin: 0 0;
     width: 120px;
     text-align: center;
-    color: #fff;
+    color: var(--white);
     font-weight: 600;
     font-size: .9rem;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .25);
@@ -100,7 +100,7 @@ body {
 }
 
 .card {
-    background: #fff;
+    background: var(--white);
     flex: 1 1 auto;
     border-radius: 16px;
     box-shadow: 0 20px 35px rgba(0, 0, 0, .08);
@@ -122,13 +122,13 @@ body {
 
 .navbar .nav-link,
 .navbar-brand {
-    color: #FFFFFF !important;
+    color: var(--white) !important;
     font-weight: 600;
 }
 
 .btn-custom {
     background: #98A89B;
-    color: #fff;
+    color: var(--white);
     border-radius: 30px;
     padding: 8px 25px;
     font-weight: 600;
@@ -137,7 +137,7 @@ body {
 
 .btn-custom:hover {
     background: #7B877E;
-    color: #fff;
+    color: var(--white);
 }
 
 /* Responsividade */
@@ -171,19 +171,21 @@ body {
     .wheel {
         width: 250px;
         height: 250px;
-        left: -85px;
+        left: -75px;
     }
 
     .focus-mask {
         width: 250px;
         height: 250px;
-        left: -85px;
+        left: -75px;
     }
 
     .wheel-btn {
         width: 40px;
         height: 40px;
         font-size: 0.8rem;
+        left: 22%;
+        top: 50%;
     }
 
     .card {
@@ -211,7 +213,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #fff;
+    color: var(--white);
     overflow: hidden;
 }
 
@@ -296,7 +298,7 @@ section {
 }
 
 .testimonial-box {
-    background: #fff;
+    background: var(--white);
     padding: 60px 40px;
     border-radius: 16px;
     max-width: 800px;
@@ -352,7 +354,7 @@ section {
     transform: translateY(-50%);
     background: #00bfa6;
     border: none;
-    color: #fff;
+    color: var(--white);
     font-size: 1.4rem;
     padding: 14px 18px;
     border-radius: 50%;
@@ -371,6 +373,58 @@ section {
 .testimonial-arrow.right {
     right: -30px;
 }
+
+/* --- CONTATO --- */
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    background: #faf9f6;
+}
+
+.camera-container {
+    position: relative;
+    max-width: 600px;
+}
+
+.camera-container img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.camera-screen {
+    position: absolute;
+    top: 69%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 8px;
+    width: 60%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.camera-screen h3 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #7B877E;
+}
+
+.camera-screen p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.camera-screen i {
+    color: #98A89B;
+    margin-right: 8px;
+}
+
 
 /* Footer */
 footer {

@@ -159,19 +159,6 @@ body {
         text-align: center;
     }
 
-    .wheel-wrap {
-        left: -40px;
-        width: 280px;
-    }
-    
-    .card {
-        flex: content;
-        left: -20px;
-        min-width: 255px;
-        max-width: 520px;
-    }
-   
-
 }
 
 /* Hero */

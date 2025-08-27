@@ -161,28 +161,70 @@ body {
 
 }
 
+/* Ajustes em telas menores */
+@media (max-width: 768px) {
+    .wheel-wrap {
+        width: 350px;
+        height: 280px;
+    }
+
+    .wheel {
+        width: 250px;
+        height: 250px;
+        left: -85px;
+    }
+
+    .focus-mask {
+        width: 250px;
+        height: 250px;
+        left: -85px;
+    }
+
+    .wheel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+
+    .card {
+        max-width: 250px;
+    }
+
+    .label--0 {
+        transform: rotate(60deg) translate(13px);
+    }
+
+    .label--1 {
+        transform: rotate(180deg) translate(13px);
+    }
+
+    .label--2 {
+        transform: rotate(300deg) translate(13px);
+    }
+}
+
 /* Hero */
 .hero {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
-  overflow: hidden;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
 }
 
 .hero-bg {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  transition: opacity 1s ease-in-out;
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
 }
 
 .hero-bg.next {
-  opacity: 0;
+    opacity: 0;
 }
 
 
